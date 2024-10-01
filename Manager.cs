@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace OOPHotel2
 {
-    internal class Manager()
+    internal class Manager(string department, string name, int age, string employeeId, DateTime startDate, decimal salary) : Person(name, age, employeeId, startDate, salary)
     {
+        
     }
 }
