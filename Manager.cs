@@ -16,5 +16,9 @@ namespace OOPHotel2
         {
             
         }
+        public void HoldMeeting()
+        {
+            Console.WriteLine($"Manager {Name} is holding a meeting.");
+        }
     }
 }
