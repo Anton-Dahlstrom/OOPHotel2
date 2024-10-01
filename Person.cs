@@ -9,9 +9,9 @@ namespace OOPHotel2
 {
     public class Person
     {
-        public string Name { get; set; }
+        public string? Name { get; set; }
         public int Age { get; set; }
-        public string EmployeeId { get; set; }
+        public string? EmployeeId { get; set; }
         public DateTime StartDate { get; set; }
         public decimal Salary { get; set; }
 
@@ -22,6 +22,10 @@ namespace OOPHotel2
             EmployeeId = employeeId;
             StartDate = startDate;
             Salary = salary;
+        }
+        public Person()
+        {
+            
         }
 
         public void PrintInfo()
