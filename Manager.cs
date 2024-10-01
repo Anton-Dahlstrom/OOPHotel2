@@ -9,7 +9,7 @@ namespace OOPHotel2
         public Manager(string name, int age, string? employeeId, DateTime startDate, decimal salary, string department) :
             base(name, age, employeeId, startDate, salary)
         {
-            
+            Department = department;
         }
 
         public Manager()
@@ -22,7 +22,7 @@ namespace OOPHotel2
         }
         public void PlanBudget()
         { 
-            Console.WriteLine($"Manager {Name} is planning the hotel.");
+            Console.WriteLine($"Manager {Name} from the {Department} department is planning the hotel budget.");
         }
     }
 }

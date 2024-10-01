@@ -18,6 +18,6 @@ public class Consultant : Person
 
     public void GiveAdvice()
     {
-        Console.WriteLine($"{Name} the {JobTitle} is giving you advice.");
+        Console.WriteLine($"{Name} the {JobTitle} from {ConsultingFirm }is giving you advice his hourly rate is {HourlyRate}.");
     }
 }
