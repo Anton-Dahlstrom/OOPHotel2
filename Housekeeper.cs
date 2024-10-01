@@ -4,8 +4,8 @@ namespace OOPHotel2
     public class Housekeeper : Employee
     {
         public Housekeeper(){ 
-            Department = "Housekeeping";
             JobTitle = "Housekeeper";
+            Department = "Housekeeping";
         }
         public Housekeeper(string name, int age, string? employeeId, DateTime startDate, decimal salary, string jobTitle) : base(name, age, employeeId, startDate, salary, "housekeeper", "housekeeping")
         {
