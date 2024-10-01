@@ -19,7 +19,7 @@ public class Employee : Person
         
     }
 
-    public void Work()
+    public virtual void Work()
     {
         Console.WriteLine($"{Name} the {JobTitle} is working");
     }
