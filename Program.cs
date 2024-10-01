@@ -37,6 +37,13 @@
             employee.PrintInfo();
             employee.Introduce();
             employee.Work();
+
+            // Skapa ett Housekeeper-objekt
+            Housekeeper anna = new Housekeeper();
+            anna.Name = "Anna Clean";
+            anna.Age = 32;
+            anna.PrintInfo(); // Skriver ut namn och ålder
+            anna.Work(); // Skriver ut att Anna städar hotellrummen
         }
     }
 }
