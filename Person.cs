@@ -20,6 +20,8 @@ namespace OOPHotel2
     public void Introduce()
     {
         Console.WriteLine($"Hej, jag heter {Name} och är {Age} år gammal.");
+
+            Console.WriteLine();
     }
     }
 }
