@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOPHotel2
 {
-    internal class Person(string name, int age, string employeeId, DateTime startDate, decimal salary)
+    public class Person(string name, int age, string employeeId, DateTime startDate, decimal salary)
     {
         string Name = name;
         int Age = age;
