@@ -13,13 +13,13 @@ namespace OOPHotel2
         string EmployeeId = employeeId;
         DateTime startDate = startDate;
         decimal Salary = salary;
-    }
     public void PrintInfo()
     {
-
+        Console.WriteLine($"Namn: {Name}, Ålder: {Age}");
     }
     public void Introduce()
     {
-
+        Console.WriteLine($"Hej, jag heter {Name} och är {Age} år gammal.");
+    }
     }
 }
