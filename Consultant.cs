@@ -14,6 +14,11 @@ public class Consultant : Person
         HourlyRate = hourlyRate;
     }
 
+    public Consultant()
+    {
+        
+    }
+
     private string JobTitle { get; } = "Consultant";
 
     public void GiveAdvice()

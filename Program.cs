@@ -44,6 +44,24 @@
             anna.Age = 32;
             anna.PrintInfo(); // Skriver ut namn och ålder
             anna.Work(); // Skriver ut att Anna städar hotellrummen
+            
+            Consultant consultant = new Consultant
+            {
+                Name = "Eva Expert",
+                Age = 35,
+                EmployeeId = "C001",
+                StartDate = new DateTime(2023, 1, 1),
+                Salary = 0, // Konsulter har ofta inte fast lön
+                HourlyRate = 1000,
+                ConsultingFirm = "Hotell Experterna AB"
+            };
+
+            Console.WriteLine("Consultant:");
+            consultant.PrintInfo();
+            consultant.Introduce();
+            consultant.GiveAdvice();
+            Console.WriteLine($"Hourly Rate: {consultant.HourlyRate}");
+            Console.WriteLine($"Consulting Firm: {consultant.ConsultingFirm}");
         }
     }
 }
