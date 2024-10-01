@@ -8,11 +8,11 @@ namespace OOPHotel2
 {
     public class Person(string name, int age, string employeeId, DateTime startDate, decimal salary)
     {
-        protected string Name = name;
-        protected int Age = age;
-        protected string EmployeeId = employeeId;
-        protected DateTime startDate = startDate;
-        protected decimal Salary = salary;
+        public string Name = name;
+        public int Age = age;
+        public string EmployeeId = employeeId;
+        public DateTime startDate = startDate;
+        public decimal Salary = salary;
     public void PrintInfo()
     {
         Console.WriteLine($"Namn: {Name}, Ålder: {Age}");
@@ -20,6 +20,6 @@ namespace OOPHotel2
     public void Introduce()
     {
         Console.WriteLine($"Hej, jag heter {Name} och är {Age} år gammal.");
-    }   Console.WriteLine();
+    }  
     }
 }
