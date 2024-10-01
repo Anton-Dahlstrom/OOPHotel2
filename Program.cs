@@ -62,6 +62,26 @@
             consultant.GiveAdvice();
             Console.WriteLine($"Hourly Rate: {consultant.HourlyRate}");
             Console.WriteLine($"Consulting Firm: {consultant.ConsultingFirm}");
+
+
+            Manager greta = new("Greta", 30, "001AAA", DateTime.Now, 30000m, "Exec");
+            Consultant frida = new("Frida", 35, DateTime.Now, "Fida Consulting", 30000m);
+            Employee sven = new("Sven", 20, "002AAA", DateTime.Now, 30000m, "Bossman", "Exec");
+            //Housekeeper anna = new("Aven", 40, "001AAA", DateTime.Now, 30000m, "Bossman", "Exec");
+            List<Person> staff = new List<Person>();
+
+            // Lägg till olika typer av anställda i listan
+            staff.Add(greta);   // Manager
+            staff.Add(frida);   // Consultant
+            staff.Add(sven);    // Employee
+            staff.Add(anna);    // Housekeeper
+
+            // Loopa igenom listan och anropa DoWork() för varje anställd
+            foreach (Person person in staff)
+            {
+                person.DoWork(); // Här demonstreras polymorfism då varje anställd utför sitt specifika arbete
+            }
+
         }
     }
 }
