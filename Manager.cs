@@ -20,5 +20,9 @@ namespace OOPHotel2
         {
             Console.WriteLine($"Manager {Name} is holding a meeting.");
         }
+        public void PlanBudget()
+        { 
+            Console.WriteLine($"Manager {Name} is planning the hotel.");
+        }
     }
 }
