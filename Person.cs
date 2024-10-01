@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace OOPHotel2
 {
-    internal class Person(string name, int age, string employeeId, DateTime startDate, decimal salary)
+    public class Person(string name, int age, string employeeId, DateTime startDate, decimal salary)
     {
-        string Name = name;
-        int Age = age;
-        string EmployeeId = employeeId;
-        DateTime startDate = startDate;
-        decimal Salary = salary;
+        protected string Name = name;
+        protected int Age = age;
+        protected string EmployeeId = employeeId;
+        protected DateTime startDate = startDate;
+        protected decimal Salary = salary;
     public void PrintInfo()
     {
         Console.WriteLine($"Namn: {Name}, Ålder: {Age}");
@@ -20,8 +20,6 @@ namespace OOPHotel2
     public void Introduce()
     {
         Console.WriteLine($"Hej, jag heter {Name} och är {Age} år gammal.");
-
-            Console.WriteLine();
-    }
+    }   Console.WriteLine();
     }
 }
