@@ -6,7 +6,7 @@ namespace OOPHotel2
     {
         public string? Department { get; set; }
 
-        public Manager(string name, int age, string employeeId, DateTime startDate, decimal salary, string department) :
+        public Manager(string name, int age, string? employeeId, DateTime startDate, decimal salary, string department) :
             base(name, age, employeeId, startDate, salary)
         {
             

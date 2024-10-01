@@ -15,7 +15,7 @@ namespace OOPHotel2
         public DateTime StartDate { get; set; }
         public decimal Salary { get; set; }
 
-        public Person(string name, int age, string employeeId, DateTime startDate, decimal salary)
+        public Person(string name, int age, string? employeeId, DateTime startDate, decimal salary)
         {
             Name = name;
             Age = age;
