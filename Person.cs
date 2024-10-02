@@ -31,5 +31,9 @@ namespace OOPHotel2
         {
             Console.WriteLine($"Hello my name is {Name} and I am {Age} years old");
         }
+        public virtual void DoWork()
+        {
+            Console.WriteLine("The person is doing work.");
+        }
     }
 }

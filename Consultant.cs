@@ -25,4 +25,8 @@ public class Consultant : Person
     {
         Console.WriteLine($"{Name} the {JobTitle} from {ConsultingFirm } is giving you advice the hourly rate is {HourlyRate:C}.");
     }
+    public override void DoWork()
+    {
+        Console.WriteLine($"{Name} the consultant is consulting.");
+    }
 }

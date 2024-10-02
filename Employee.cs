@@ -23,4 +23,8 @@ public class Employee : Person
     {
         Console.WriteLine($"{Name} the {JobTitle} is working");
     }
+    public override void DoWork()
+    {
+        Console.WriteLine($"{Name} the {JobTitle} is working.");
+    }
 }

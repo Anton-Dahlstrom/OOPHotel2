@@ -24,5 +24,9 @@ namespace OOPHotel2
         { 
             Console.WriteLine($"Manager {Name} from the {Department} department is planning the hotel budget.");
         }
+        public override void DoWork()
+        {
+            Console.WriteLine($"{Name} the manager is managing.");
+        }
     }
 }
